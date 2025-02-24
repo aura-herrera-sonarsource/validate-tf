@@ -1,3 +1,3 @@
 # validate-tf
 
-validation htc
+validation of terraform code
