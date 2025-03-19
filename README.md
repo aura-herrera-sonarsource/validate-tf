@@ -1,7 +1,6 @@
 # validate-tf
 
-validating dev11 endpoint
-validating dev11
+validation us
 jdsfhjkdhf
 asjfdhajsd
 fsdjkf
