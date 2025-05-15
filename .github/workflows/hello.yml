@@ -1,0 +1,27 @@
+name: Fetch changed services
+
+on:
+  workflow_dispatch:
+    inputs:
+      method:
+        description: Github Action runner
+        required: false
+        type: string
+        default: "manually"
+
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: read
+  statuses: read        # Read BUILD_NUMBER
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: List services with changes detected
+        run: |
+          echo "Hola!"
